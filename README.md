@@ -17,3 +17,10 @@ A todolist app to keep track of all your tasks.
 
 ![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
 
+Modified Todoey as follows
+
+Change Program Name to Reference-Note
+Navigation Title to "Index" and "Contents" 3 Add Swipe function Leading Swipe : Update(Blue) Content in Cell Trailing Swipe : Delete(Red) Content in Cell
+Add Add button to create content
+Save the list of TableView Cell to CoreData "Keyword" and "ContentsData"
+
