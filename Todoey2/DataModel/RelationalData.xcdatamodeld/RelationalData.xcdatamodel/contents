@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ContentsData" representedClassName="ContentsData" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <relationship name="contents2Key" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KeyData" inverseName="key2Contents" inverseEntity="KeyData"/>
+    </entity>
+    <entity name="KeyData" representedClassName=".KeyData" syncable="YES" codeGenerationType="class">
+        <attribute name="keyWord" optional="YES" attributeType="String"/>
+        <relationship name="key2Contents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContentsData" inverseName="contents2Key" inverseEntity="ContentsData"/>
+    </entity>
+    <elements>
+        <element name="ContentsData" positionX="-331.78515625" positionY="110.984375" width="128" height="73"/>
+        <element name="KeyData" positionX="-543.19921875" positionY="102.39453125" width="128" height="73"/>
+    </elements>
+</model>
